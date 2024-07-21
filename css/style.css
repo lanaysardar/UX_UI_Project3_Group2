@@ -3,12 +3,12 @@ body{
 }
 
 /*TYPOGRAPHY*/
-/* h1, h2, h3, h4, h5, button, #submit-btn{
-    font-family: "Playfair Display", serif;
+h1, h2, h3, h4, h5, button, #submit-btn{
+    font-family: "Poppins", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-} */
+}
 h1, h2, h3, h4, h5{
     margin: 0px 0px 20px 0px;
 }
@@ -29,7 +29,9 @@ h5, button, #submit-btn{
     font-size: 20px;
 }
 p{
-    margin:0px;
+    font-family: "Lora";
+    font-size: 16px;
+    margin:0 10 10 0;
 }
 
 /*FLEX CONTAINER CLASSES*/
@@ -140,6 +142,22 @@ for example, any body content with missing pet window on right side*/
 .right-col{
     grid-area: right-col;
 }
+@media screen and (max-width:1200px) {
+    .grid-container-2-col{
+        display:grid;
+        grid-template-columns: 45% 10% 45%;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "left-col disabled right-col";}
+    h1{
+            font-size: 34px;
+    }
+    #graphic{
+        height: 150px;
+        width: 500px;
+    }
+}
+
 
 /*following class applied to body content sections, creates a 50px separation between this section and the one before*/
 .main-section{
@@ -149,9 +167,11 @@ for example, any body content with missing pet window on right side*/
 
 .msg-box{
     height:fit-content;
-    background-color: rgb(194, 195, 195);
+    background-color: #F1F1F1;
+    border-radius: 20px;
     padding:20px;
-
+    border: 1.5px solid;
+    margin-bottom: 50px;
 }
 .msg-box input{
     height:30px;
@@ -160,14 +180,40 @@ for example, any body content with missing pet window on right side*/
 button{
     height:50px;
     width:100%;
+    border-radius: 15px;
+    border: 1.5px solid;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+#missing{
+    border-color: #B1000C;
+    color: #B1000C;
+}
+button.missing{
+    border-color: #B1000C;
+    color: #B1000C;
+    background-color: #FFDDE0;
+}
+#newsletter{
+    border-color: #005679;
+    color: #005679; 
+}
+button.newsletter{
+    border-color: #005679;
+    color: #005679;
+    background-color: #DEF6FF;
 }
 
 /*FOOTER*/
 footer{
-    background-color: rgb(221, 221, 221);
+    background-color: #005679;
     padding:20px 0px;
 }
 #footer-content{
     margin:0px 100px;
     width:calc(100% - 200px);
+    color: white;
+}
+footer p{
+    margin: 0px;
 }
