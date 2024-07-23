@@ -121,6 +121,10 @@ header{
     text-decoration: underline;
 }
 
+#hamburger-menu{
+    display:none;
+}
+
 /*HERO SECTION*/
 #hero{
     background-image: url("../images/Hero_Container.png");
@@ -238,4 +242,21 @@ footer p{
         height: 150px;
         width: 500px;
     } */
+
+    
+}
+/*solely to replace menu tabs with hamburger menu icon*/
+@media screen and (max-width:1100px) {
+    .menu-tabs{
+        display:none;
+    }
+    #hamburger-menu{
+        display:flex;
+        margin:auto 25px;
+    }
+}
+
+/*MOBILE SCREENS*/
+@media screen and (max-width:500px){
+
 }
