@@ -36,7 +36,7 @@
             <div id="hero-content" class="body-content grid-container-2-col"> <!--flex-row-container-->
                 <div id="hero-btns" class="flex-column-container right-col"> 
                     <button>Adopt</button>
-                    <button>Volunteer</button>
+                    <button>Get Involved</button>
                     <button>Donate</button>
                 </div>
             </div>
@@ -45,14 +45,23 @@
         <!--BODY CONTENT-->
         <section class="body-content">
             <!--OUR IMPACT-->
-            <div class="main-section">
+
+            <!--DESKTOP-->
+            <div id="desktop-body" class="main-section">
+                
                 <div class="grid-container-2-col">
                     <div class="left-col">
                         <h1>Our Impact</h1>
                         <p>Chicago Animal Care and Control (CACC) is committed to protecting public safety and ensuring the humane care of animals through sheltering, pet placement, education, and animal law enforcement. As Chicago’s only open-admission, municipal animal shelter and control facility, CACC provides a centralized resource for animal-related services for Chicago residents, and promotes the humane stewardship of animals throughout the City. </p>
                         <p>CACC accepts stray and owner-surrendered animals and also impounds dangerous animals and animals confiscated for various reasons, including abuse and neglect. Many animals arrive at CACC injured, ill, or very scared. While at CACC, they are provided medical attention, fresh food, clean water, and opportunities for socialization, rescue, and adoption.</p> 
                         <p>If you need more information, please email visitcacc@cityofchicago.org</p>                
-                        <img id="graphic" src="images/StarGraphic.png"> <!--width="690px" height="195px"-->
+                        <!-- <img id="graphic" src="images/StarGraphic.png"> -->
+                         <div id="graphics-container" class="flex-row-wrap-container">
+                            <img src="images/Star1.png">
+                            <img src="images/Star2.png">
+                            <img src="images/Star3.png">
+                            <img src="images/Star4.png">
+                         </div>
                     </div>
                     <div class="right-col">
                         <div class="msg-box flex-column-container" id="missing">
@@ -68,13 +77,45 @@
                         </div>
                     </div>
                 </div>
+
+            </div>
+
+            <!--MOBILE-->
+            <div id="mobile-body" class="main-section">
+                
+                <div class="flex-column-container">
+                    <h1>Our Impact</h1>
+                    <p>Chicago Animal Care and Control (CACC) is committed to protecting public safety and ensuring the humane care of animals through sheltering, pet placement, education, and animal law enforcement. As Chicago’s only open-admission, municipal animal shelter and control facility, CACC provides a centralized resource for animal-related services for Chicago residents, and promotes the humane stewardship of animals throughout the City. </p>
+                    <p>CACC accepts stray and owner-surrendered animals and also impounds dangerous animals and animals confiscated for various reasons, including abuse and neglect. Many animals arrive at CACC injured, ill, or very scared. While at CACC, they are provided medical attention, fresh food, clean water, and opportunities for socialization, rescue, and adoption.</p> 
+                    <p style="width:100%;">If you need more information, please email visitcacc@cityofchicago.org</p>                
+                    <!-- <img id="graphic" src="images/StarGraphic.png"> -->
+                    <div id="graphics-container" class="flex-row-wrap-container">
+                        <img src="images/Star1.png">
+                        <img src="images/Star2.png">
+                        <img src="images/Star3.png">
+                        <img src="images/Star4.png">
+                    </div>
+                    <div class="msg-box flex-column-container" id="missing">
+                        <h3>Is your pet missing?</h3>
+                        <button class="missing">Register missing pet</button>
+                        <button class="missing">View found pets</button>
+                    </div>
+                    <div class="msg-box flex-column-container" id="newsletter">
+                        <h3>Join our newsletter!</h3>
+                        <p>Enter your email below to receive alerts about new additions to the shelter and CACC news!</p>
+                        <input type="email" placeholder="Enter Email"><br>
+                        <button class="newsletter">Submit</button>
+                    </div>
+                </div>
+                
             </div>
             
         </section>
 
         <!--FOOTER-->
         <footer>
-            <div id="footer-content" class="flex-row-container">
+            <!--DESKTOP-->
+            <div id="desktop-footer" class="flex-row-container footer-content">
                 <div class="flex-row-container">
                     <div style="margin-right:20px;">
                         <h5>Contact Us</h5>
@@ -93,13 +134,35 @@
                         <p style="text-decoration:underline;">Register Lost Pet</p>
                     </div>
                 </div>
-                <div class="flex-column-container">
+                <div class="flex-column-container footer-icon-container">
                     <button class="newsletter">Join Our Newsletter!</button>
-                    <div class="flex-row-container">
-                        <img src="images/SocialMediaIcons.png" height="45px">
+                    <div class="flex-row-container social-media-icons">
+                        <img src="images/instagram-icon.svg" height="50px">
+                        <img src="images/facebook-icon.svg" height="50px">
+                        <img src="images/x-icon.svg" height="50px">
+                        <img src="images/linkedin-icon.svg" height="50px">
                     </div>
                 </div>
-                
+            </div>
+
+            <!--MOBILE-->
+            <div id="mobile-footer" class="flex-column-container footer-content">
+                <div style="margin-right:auto;margin-bottom:20px;">
+                    <h5>Contact Us</h5>
+                    <p>2741 S Western Ave</p>
+                    <p>Chicago, IL 60608</p>
+                    <p>12PM-7PM Daily</p>
+                    <p>(312) 747-1406</p>
+                    <p>visitCACC@cityofchicago.org</p>
+                </div>
+                <button class="newsletter">Company Links</button>
+                <button class="newsletter">Join Our Newsletter!</button>
+                <div class="flex-row-container social-media-icons">
+                    <img src="images/instagram-icon.svg" height="50px">
+                    <img src="images/facebook-icon.svg" height="50px">
+                    <img src="images/x-icon.svg" height="50px">
+                    <img src="images/linkedin-icon.svg" height="50px">
+                </div>
                 
             </div>
             
